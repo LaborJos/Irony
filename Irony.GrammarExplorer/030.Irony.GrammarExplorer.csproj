@@ -1,35 +1,34 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
-    <PropertyGroup>
-        <OutputType>WinExe</OutputType>
-        <UseWindowsForms>true</UseWindowsForms>
-        <AssemblyName>Irony.GrammarExplorer</AssemblyName>
-        <RootNamespace>Irony.GrammarExplorer</RootNamespace>
-    </PropertyGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>Irony.GrammarExplorer</AssemblyName>
+    <RootNamespace>Irony.GrammarExplorer</RootNamespace>
+  </PropertyGroup>
 
-    <ItemGroup>
-        <PackageReference Include="Irony" Version="1.1.0" />
-        <PackageReference Include="Irony.Interpreter" Version="1.1.0" />
-    </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Irony" Version="1.1.0" />
+    <PackageReference Include="Irony.Interpreter" Version="1.1.0" />
+  </ItemGroup>
 
-    <ItemGroup>
-        <ProjectReference Include="..\Irony.WinForms\035.Irony.WinForms.csproj" />
-    </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Irony.WinForms\035.Irony.WinForms.csproj" />
+  </ItemGroup>
 
-    <ItemGroup>
-        <Reference Include="System.Windows.Forms" />
-    </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
 
-    <ItemGroup>
-        <None Include="Properties\Settings.settings">
-            <Generator>SettingsSingleFileGenerator</Generator>
-            <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-        </None>
-        <Compile Update="Properties\Settings.Designer.cs">
-            <AutoGen>True</AutoGen>
-            <DependentUpon>Settings.settings</DependentUpon>
-            <DesignTimeSharedInput>True</DesignTimeSharedInput>
-        </Compile>
-    </ItemGroup>
-    
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
 </Project>

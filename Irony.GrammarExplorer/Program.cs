@@ -23,20 +23,21 @@ namespace Irony.GrammarExplorer {
     /// </summary>
     [STAThread]
     static void Main() {
-      var program = CreateInstanceInSeparateDomain();
-      program.RunApplication();
+      ////var program = CreateInstanceInSeparateDomain();
+      ////program.RunApplication();
+      RunApplication();
     }
 
-    static Program CreateInstanceInSeparateDomain() {
-      var setup = new AppDomainSetup {
-        ShadowCopyFiles = true.ToString()
-      };
+    ////static Program CreateInstanceInSeparateDomain() {
+    ////  var setup = new AppDomainSetup {
+    ////    ShadowCopyFiles = true.ToString()
+    ////  };
 
-      var domain = AppDomain.CreateDomain("HostedDomain", null, setup);
-      return (Program)domain.CreateInstanceAndUnwrap(typeof(Program).Assembly.FullName, typeof(Program).FullName);
-    }
+    ////  var domain = AppDomain.CreateDomain("HostedDomain", null, setup);
+    ////  return (Program)domain.CreateInstanceAndUnwrap(typeof(Program).Assembly.FullName, typeof(Program).FullName);
+    ////}
 
-    void RunApplication() {
+    static void RunApplication() {
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
       Application.ThreadException += new System.Threading.ThreadExceptionEventHandler(Application_ThreadException);
