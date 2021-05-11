@@ -4,6 +4,7 @@
     <AssemblyName>Irony.WinForms</AssemblyName>
     <RootNamespace>Irony.WinForms</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
+    <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>

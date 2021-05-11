@@ -5,6 +5,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <AssemblyName>Irony.GrammarExplorer</AssemblyName>
     <RootNamespace>Irony.GrammarExplorer</RootNamespace>
+    <TargetFrameworks>net48;net5.0-windows</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
